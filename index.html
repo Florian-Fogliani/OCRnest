@@ -1,10 +1,129 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Sample Page</title>
+    <title>OCRnest</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="OCRnest -- A modifier" />
+    <link rel="icon" href="/favicon.png" />
+    <link rel="stylesheet" href="/style.css" />
   </head>
   <body>
-    <h1>Welcome to my website!</h1>
-    <p>This is a sample page with a sentence.</p>
+    <header
+      class="flex justify-between p-4 bg-white/80 rounded-xl items-center"
+    >
+      <img src="favicon.png" alt="OCRnest" class="aspect-[587/425] max-h-12" />
+      <div class="font-medium flex gap-4">
+        <a href="#accueil">Accueil</a>
+        <a href="#fonctionnement">Fonctionnement</a>
+        <a href="#installation">Installation</a>
+        <a href="#auteurs">Auteurs</a>
+      </div>
+    </header>
+    <div class="flex justify-between py-16">
+      <div class="w-1/2">
+        <h2 id="accueil" class="text-4xl font-semibold mb-2">
+          Qu’est-ce qu’OCRnest ?
+        </h2>
+        <p>
+          Do esse labore magna consequat tempor velit. Fugiat anim enim sit
+          ullamco. Elit deserunt sunt laborum ad sint elit dolore ut id sunt
+          aliquip nostrud aliqua ullamco. Sint consequat cupidatat in ullamco et
+          veniam dolore ad id. Sint consequat cupidatat in ullamco et veniam
+          dolore ad id. Sint consequat cupidatat in ullamco et veniam dolore ad
+          id.
+        </p>
+      </div>
+      <img
+        src="img/sudoku.jpeg"
+        alt="Sudoku"
+        class="w-2/5 aspect-square rounded-xl"
+      />
+    </div>
+    <h2 id="fonctionnement" class="text-4xl font-semibold mb-2">
+      Fonctionnement
+    </h2>
+    <div class="flex overflow-y-auto gap-4">
+      <div class="bg-white/20 rounded-lg flex-col p-4">
+        <div class="w-64 h-72 bg-white/20 rounded-md"></div>
+        <p class="text-xl mt-4 font-semibold">Prétraitement</p>
+        <p class="text-black/70 text-md">
+          Cillum reprehenderit commodo amet exercitation aliqua est incididunt.
+          Cillum reprehenderit commodo amet exercitation aliqua est incididunt.
+        </p>
+      </div>
+      <div class="bg-white/20 rounded-lg flex-col p-4">
+        <div class="w-64 h-72 bg-white/20 rounded-md"></div>
+        <p class="text-xl mt-4 font-semibold">Découpage</p>
+        <p class="text-black/70 text-md">
+          Cillum reprehenderit commodo amet exercitation aliqua est incididunt.
+          Cillum reprehenderit commodo amet exercitation aliqua est incididunt.
+        </p>
+      </div>
+      <div class="bg-white/20 rounded-lg flex-col p-4">
+        <div class="w-64 h-72 bg-white/20 rounded-md"></div>
+        <p class="text-xl mt-4 font-semibold">Détection</p>
+        <p class="text-black/70 text-md">
+          Cillum reprehenderit commodo amet exercitation aliqua est incididunt.
+          Cillum reprehenderit commodo amet exercitation aliqua est incididunt.
+        </p>
+      </div>
+      <div class="bg-white/20 rounded-lg flex-col p-4">
+        <div class="w-64 h-72 bg-white/20 rounded-md"></div>
+        <p class="text-xl mt-4 font-semibold">Résolution</p>
+        <p class="text-black/70 text-md">
+          Cillum reprehenderit commodo amet exercitation aliqua est incididunt.
+          Cillum reprehenderit commodo amet exercitation aliqua est incididunt.
+        </p>
+      </div>
+    </div>
+    <h2 id="installation" class="text-4xl font-semibold mb-2 mt-6">
+      Installation
+    </h2>
+    <p class="bg-black font-mono text-green-600 p-6 rounded-lg">
+      $ echo "deb [trusted=yes] https://apt.dev /" | sudo tee
+      /etc/apt/sources.list.d/ocrnest.list <br />
+      $ sudo apt-get update <br />
+      $ sudo apt-get install ocrnest <br />
+    </p>
+
+    <h2 id="auteurs" class="text-4xl font-semibold mb-4 mt-6">Auteurs</h2>
+    <div class="flex justify-evenly">
+      <div
+        class="flex-col justify-center items-center text-center font-semibold"
+      >
+        <div class="w-32 h-32 bg-white/20 rounded-full mb-2"></div>
+        <p>
+          Prénom <br />
+          Nom
+        </p>
+      </div>
+      <div
+        class="flex-col justify-center items-center text-center font-semibold"
+      >
+        <div class="w-32 h-32 bg-white/20 rounded-full mb-2"></div>
+        <p>
+          Prénom <br />
+          Nom
+        </p>
+      </div>
+      <div
+        class="flex-col justify-center items-center text-center font-semibold"
+      >
+        <div class="w-32 h-32 bg-white/20 rounded-full mb-2"></div>
+        <p>
+          Prénom <br />
+          Nom
+        </p>
+      </div>
+      <div
+        class="flex-col justify-center items-center text-center font-semibold"
+      >
+        <div class="w-32 h-32 bg-white/20 rounded-full mb-2"></div>
+        <p>
+          Prénom <br />
+          Nom
+        </p>
+      </div>
+    </div>
   </body>
 </html>
