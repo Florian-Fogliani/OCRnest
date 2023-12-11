@@ -25,12 +25,7 @@
           Qu’est-ce qu’OCRnest ?
         </h2>
         <p>
-          Do esse labore magna consequat tempor velit. Fugiat anim enim sit
-          ullamco. Elit deserunt sunt laborum ad sint elit dolore ut id sunt
-          aliquip nostrud aliqua ullamco. Sint consequat cupidatat in ullamco et
-          veniam dolore ad id. Sint consequat cupidatat in ullamco et veniam
-          dolore ad id. Sint consequat cupidatat in ullamco et veniam dolore ad
-          id.
+          OCRnest est un projet réalisé dans le cadre de la deuxième année de cycle préparatoire de l'EPITA. Ce projet vise à la résolution d'un sudoku par reconnaissance des chiffres. Nous sommes 4 à avoir réalisés ce projet.
         </p>
       </div>
       <img
@@ -47,32 +42,28 @@
         <div class="w-64 h-72 bg-white/20 rounded-md"></div>
         <p class="text-xl mt-4 font-semibold">Prétraitement</p>
         <p class="text-black/70 text-md">
-          Cillum reprehenderit commodo amet exercitation aliqua est incididunt.
-          Cillum reprehenderit commodo amet exercitation aliqua est incididunt.
+          Une image n'étant jamais parfaite, elle est prétraiter avant tout découpage ou reconnaissance de caractéres par le réseau neuronal.
         </p>
       </div>
       <div class="bg-white/20 rounded-lg flex-col p-4">
         <div class="w-64 h-72 bg-white/20 rounded-md"></div>
         <p class="text-xl mt-4 font-semibold">Découpage</p>
         <p class="text-black/70 text-md">
-          Cillum reprehenderit commodo amet exercitation aliqua est incididunt.
-          Cillum reprehenderit commodo amet exercitation aliqua est incididunt.
+          Cette partie fait suite au prétraitement, elle utilise la transformée de Hough pour récupérer les lignes de la grille et procéder au découpage des cases.
         </p>
       </div>
       <div class="bg-white/20 rounded-lg flex-col p-4">
         <div class="w-64 h-72 bg-white/20 rounded-md"></div>
         <p class="text-xl mt-4 font-semibold">Détection</p>
         <p class="text-black/70 text-md">
-          Cillum reprehenderit commodo amet exercitation aliqua est incididunt.
-          Cillum reprehenderit commodo amet exercitation aliqua est incididunt.
+          Le réseau neuronal est fondamental pour la résolution du Sudoku. Il vise à la reconnaissance des caractères pour pouvoir être passer dans le système de résolution.
         </p>
       </div>
       <div class="bg-white/20 rounded-lg flex-col p-4">
         <div class="w-64 h-72 bg-white/20 rounded-md"></div>
         <p class="text-xl mt-4 font-semibold">Résolution</p>
         <p class="text-black/70 text-md">
-          Cillum reprehenderit commodo amet exercitation aliqua est incididunt.
-          Cillum reprehenderit commodo amet exercitation aliqua est incididunt.
+          La résolution du Sudoku s'éffectuer par le Solver grâce à la technique du backtracking. A la fin, une image du Sudoku résolu est proposé à l'utilisateur.
         </p>
       </div>
     </div>
@@ -82,8 +73,10 @@
     <p class="bg-black font-mono text-green-600 p-6 rounded-lg">
       $ echo "deb [trusted=yes] https://apt.dev /" | sudo tee
       /etc/apt/sources.list.d/ocrnest.list <br />
-      $ sudo apt-get update <br />
-      $ sudo apt-get install ocrnest <br />
+      $ sudo apt-get gtk <br />
+      $ sudo apt-get SDL2 <br />
+      $ sudo apt-get SDL2_Image <br />
+      $ git clone ocrnest <br />
     </p>
 
     <h2 id="auteurs" class="text-4xl font-semibold mb-4 mt-6">Auteurs</h2>
@@ -93,8 +86,8 @@
       >
         <div class="w-32 h-32 bg-white/20 rounded-full mb-2"></div>
         <p>
-          Prénom <br />
-          Nom
+          Ambroise  <br />
+          Durst
         </p>
       </div>
       <div
@@ -102,8 +95,8 @@
       >
         <div class="w-32 h-32 bg-white/20 rounded-full mb-2"></div>
         <p>
-          Prénom <br />
-          Nom
+          Laure <br />
+          Montredon
         </p>
       </div>
       <div
@@ -111,8 +104,8 @@
       >
         <div class="w-32 h-32 bg-white/20 rounded-full mb-2"></div>
         <p>
-          Prénom <br />
-          Nom
+          Irène <br />
+          Lin
         </p>
       </div>
       <div
@@ -120,8 +113,8 @@
       >
         <div class="w-32 h-32 bg-white/20 rounded-full mb-2"></div>
         <p>
-          Prénom <br />
-          Nom
+          Florian <br />
+          Fogliani
         </p>
       </div>
     </div>
